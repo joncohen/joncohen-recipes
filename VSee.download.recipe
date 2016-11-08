@@ -16,7 +16,7 @@
         <string>vseemac</string>
     </dict>
     <key>MinimumVersion</key>
-    <string>3.0.0</string>
+    <string>0.4</string>
     <key>Process</key>
     <array>
         <dict>
