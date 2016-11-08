@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>Downloads the latest VSee disk image and imports into Munki.</string>
+    <key>Identifier</key>
+    <string>com.github.joncohen.munki.vseemac</string>
+    <key>Input</key>
+    <dict>
+        <key>NAME</key>
+        <string>SecureVideo-VSeeClient</string>
+        <key>MUNKI_REPO_SUBDIR</key>
+        <string>apps/vsee</string>
+        <key>pkginfo</key>
+        <dict>
+            <key>catalogs</key>
+            <array>
+                <string>autopkg</string>
+            </array>
+            <key>description</key>
+            <string>To use SecureVideo.com, a videoconferencing application called VSee Embedded must be installed on the device you will use to participate in a session. This process only needs to be done once per device.</string>
+            <key>display_name</key>
+            <string>Secure Video VSee Client</string>
+            <key>name</key>
+            <string>%NAME%</string>
+            <key>unattended_install</key>
+            <true/>
+            <key>unattended_uninstall</key>
+            <true/>
+            <key>category</key>
+            <string>Business</string>
+            <key>developer</key>
+            <string>Vsee</string>
+        </dict>
+    </dict>
+    <key>MinimumVersion</key>
+    <string>0.2.0</string>
+    <key>ParentRecipe</key>
+    <string>com.github.joncohen.download.vseemac</string>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Arguments</key>
+            <dict>
+                <key>pkg_path</key>
+                <string>%pathname%</string>
+                <key>repo_subdirectory</key>
+                <string>%MUNKI_REPO_SUBDIR%</string>
+            </dict>
+            <key>Processor</key>
+            <string>MunkiImporter</string>
+        </dict>
+    </array>
+</dict>
+</plist>
