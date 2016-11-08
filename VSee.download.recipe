@@ -6,15 +6,7 @@
     <string>To use SecureVideo.com, a videoconferencing application called VSee Embedded must be installed on the device you will use to participate in a session. This process only needs to be done once per device.</string>
     <key>Identifier</key>
     <string>com.github.joncohen.download.vsee</string>
-    <key>Input</key>
-    <dict>
-        <key>NAME</key>
-            <string>vseemac</string>
-        <key>DOWNLOAD_URL</key>
-            <string>https://my.vsee.com/download</string>
-        <key>USER_AGENT</key>
-            <string>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_3) AppleWebKit/536.28.10 (KHTML, like Gecko) Version/6.0.3 Safari/536.28.10</string>
-    </dict>
+    
     <key>MinimumVersion</key>
     <string>0.4.0</string>
     <key>Process</key>
@@ -25,14 +17,14 @@
             <key>Arguments</key>
             <dict>
                 <key>url</key>
-                <string>%DOWNLOAD_URL%</string>
+                <string>https://my.vsee.com/download</string>
                 <key>request_headers</key>
                 <dict>
                         <key>user-agent</key>
-                        <string>%USER_AGENT%</string>
+                        <string>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_3) AppleWebKit/536.28.10 (KHTML, like Gecko) Version/6.0.3 Safari/536.28.10</string>
                 </dict>
                 <key>filename</key>
-                <string>%NAME%.dmg</string>
+                <string>vseemac.dmg</string>
             </dict>
         </dict>
             <key>Processor</key>
