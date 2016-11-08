@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>To use SecureVideo.com, a videoconferencing application called VSee Embedded must be installed on the device you will use to participate in a session. This process only needs to be done once per device.</string>
+    <key>Identifier</key>
+    <string>com.github.joncohen.download.vsee</string>
+    <key>Input</key>
+    <dict>
+        <key>RELEASE</key>
+        <string>latest</string>
+        <key>LOCALE</key>
+        <string>en_US</string>
+        <key>NAME</key>
+        <string>vseemac</string>
+    </dict>
+    <key>MinimumVersion</key>
+    <string>3.0.0</string>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Arguments</key>
+            <dict>
+                <key>product_name</key>
+                <string>vsee</string>
+                <key>release</key>
+                <string>%RELEASE%</string>
+                <key>locale</key>
+                <string>%LOCALE%</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Arguments</key>
+            <dict>
+                <key>filename</key>
+                <string>%NAME%.dmg</string>
+            </dict>
+            <key>Processor</key>
+            <string>URLDownloader</string>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>EndOfCheckPhase</string>
+        </dict>
+    </array>
+</dict>
+</plist>
