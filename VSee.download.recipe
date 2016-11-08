@@ -29,6 +29,8 @@
                 <key>locale</key>
                 <string>%LOCALE%</string>
             </dict>
+            <key>Processor</key>
+            <string>URLDownloader</string>
         </dict>
         <dict>
             <key>Arguments</key>
