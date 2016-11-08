@@ -8,40 +8,34 @@
     <string>com.github.joncohen.download.vsee</string>
     <key>Input</key>
     <dict>
-        <key>RELEASE</key>
-        <string>latest</string>
-        <key>LOCALE</key>
-        <string>en_US</string>
         <key>NAME</key>
-        <string>vseemac</string>
+            <string>vseemac</string>
+        <key>DOWNLOAD_URL</key>
+            <string>https://my.vsee.com/download</string>
+        <key>USER_AGENT</key>
+            <string>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_3) AppleWebKit/536.28.10 (KHTML, like Gecko) Version/6.0.3 Safari/536.28.10</string>
+
     </dict>
     <key>MinimumVersion</key>
-    <string>0.4</string>
+    <string>0.4.0</string>
     <key>Process</key>
     <array>
         <dict>
-            <key>Arguments</key>
-            <dict>
-                <key>product_name</key>
-                <string>vsee</string>
-                <key>release</key>
-                <string>%RELEASE%</string>
-                <key>locale</key>
-                <string>%LOCALE%</string>
-            </dict>
             <key>Processor</key>
             <string>URLDownloader</string>
-        </dict>
-        <dict>
             <key>Arguments</key>
             <dict>
+                <key>url</key>
+                <string>%DOWNLOAD_URL%</string>
+                <key>request_headers</key>
+                <dict>
+                        <key>user-agent</key>
+                        <string>%USER_AGENT%</string>
+                </dict>
                 <key>filename</key>
                 <string>%NAME%.dmg</string>
             </dict>
-            <key>Processor</key>
-            <string>URLDownloader</string>
         </dict>
-        <dict>
             <key>Processor</key>
             <string>EndOfCheckPhase</string>
         </dict>
