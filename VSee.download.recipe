@@ -6,27 +6,49 @@
     <string>To use SecureVideo.com, a videoconferencing application called VSee Embedded must be installed on the device you will use to participate in a session. This process only needs to be done once per device.</string>
     <key>Identifier</key>
     <string>com.github.joncohen.download.vsee</string>
-    
+    <key>Input</key>
+    <dict>
+        <key>RELEASE</key>
+        <string>latest</string>
+        <key>LOCALE</key>
+        <string>en_US</string>
+        <key>NAME</key>
+        <string>vseemac</string>
+        <key>DOWNLOAD_URL</key>
+        <string>https://my.vsee.com/download</string>
+        <key>USER_AGENT</key>
+        <string>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_3) AppleWebKit/536.28.10 (KHTML, like Gecko) Version/6.0.3 Safari/536.28.10</string>
+
+    </dict>
     <key>MinimumVersion</key>
-    <string>0.4.0</string>
+    <string>0.4</string>
     <key>Process</key>
     <array>
         <dict>
+            <key>Arguments</key>
+            <dict>
+                <key>product_name</key>
+                <string>vsee</string>
+                <key>release</key>
+                <string>%RELEASE%</string>
+                <key>locale</key>
+                <string>%LOCALE%</string>
+            </dict>
             <key>Processor</key>
             <string>URLDownloader</string>
             <key>Arguments</key>
             <dict>
                 <key>url</key>
-                <string>https://my.vsee.com/download</string>
+                <string>%DOWNLOAD_URL%</string>
                 <key>request_headers</key>
                 <dict>
                         <key>user-agent</key>
-                        <string>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_3) AppleWebKit/536.28.10 (KHTML, like Gecko) Version/6.0.3 Safari/536.28.10</string>
+                        <string>%USER_AGENT%</string>
                 </dict>
                 <key>filename</key>
-                <string>vseemac.dmg</string>
-            </dict>
+                <string>%NAME%.dmg</string>
         </dict>
+        <dict>
             <key>Processor</key>
             <string>EndOfCheckPhase</string>
         </dict>
