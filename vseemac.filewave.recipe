@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads the latest VSee disk image and imports into Filewave.</string>
 	<key>Identifier</key>
-	<string>com.github.joncohen.munki.vseemac</string>
+	<string>com.github.joncohen.filewave.vseemac</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
