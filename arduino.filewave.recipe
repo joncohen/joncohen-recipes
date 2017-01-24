@@ -38,14 +38,12 @@
 		<dict>
 			<key>Arguments</key>
 			<dict>
-				<key>fw_app_bundle_id</key>
-				<string>%bundleid%</string>
 				<key>fw_app_version</key>
 				<string>%version%</string>
 				<key>fw_fileset_name</key>
-				<string>Arduino %MAJOR_VERSION%</string>
+				<string>Arduino</string>
 				<key>fw_import_source</key>
-				<string>%RECIPE_CACHE_DIR%/%NAME%/Arduino %MAJOR_VERSION%.app</string>
+				<string>%RECIPE_CACHE_DIR%/%NAME%/Arduino.app</string>
 			</dict>
 			<key>Processor</key>
 			<string>com.github.autopkg.filewave.FWTool/FileWaveImporter</string>
