@@ -34,7 +34,7 @@ used by other processors in a child recipe.
 	<key>MinimumVersion</key>
 	<string>0.5.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.autopkg.download.MSPowerPoint2016</string>
+	<string>com.github.autopkg.download.MSWord2016</string>
 	<key>Process</key>
 	<array>
 		<dict>
@@ -50,7 +50,7 @@ used by other processors in a child recipe.
 				<string>%pathname%</string>
 			</dict>
 			<key>Processor</key>
-			<string>com.github.johncclayton.filewave.FWTool/FileWaveImporter</string>
+			<string>com.github.autopkg.filewave.FWTool/FileWaveImporter</string>
 		</dict>
 	</array>
 </dict>
