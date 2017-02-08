@@ -9,7 +9,7 @@
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
-		<string>VLC</string>
+		<string>Prezi</string>
 		<key>fw_app_bundle_id</key>
 		<string>com.github.joncohen.filewave.prezi</string>
 		<key>fw_destination_root</key>
