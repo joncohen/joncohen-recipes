@@ -18,6 +18,9 @@
 	<key>ParentRecipe</key>
 	<string>io.github.hjuutilainen.download.Atom</string>
 	
+<!--
+Process based on the work from https://github.com/autopkg/peshay-recipes.git
+-->
 
 	<key>Process</key>
 	<array>
