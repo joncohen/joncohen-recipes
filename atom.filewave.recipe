@@ -59,6 +59,8 @@ Process based on the work from https://github.com/autopkg/peshay-recipes.git
 				<string>%NAME% - %version%</string>
 				<key>fw_import_source</key>
 				<string>%RECIPE_CACHE_DIR%/%NAME%/%app_name%.app</string>
+				<key>fw_fileset_group</key>
+				<string>Atom</string>
 			</dict>
 			<key>Processor</key>
 			<string>com.github.autopkg.filewave.FWTool/FileWaveImporter</string>
