@@ -27,7 +27,7 @@ Process based on the work from https://github.com/autopkg/peshay-recipes.git
 		<dict>
 			<key>Processor</key>
 			<string>Unarchiver</string>
-		<dict>
+		</dict>
 		<dict>
 			<key>Arguments</key>
 			<dict>
