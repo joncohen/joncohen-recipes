@@ -24,8 +24,8 @@
 		<dict>
 			<key>Processor</key>
 			<string>Unarchiver</string>
-
-			<dict>
+		<dict>
+		<dict>
 			<key>Arguments</key>
 			<dict>
 				<key>info_path</key>
@@ -40,12 +40,10 @@
 					<string>version</string>
 				</dict>
 			</dict>
-				<key>Processor</key>
-				<string>PlistReader</string>
-			</dict>
+			<key>Processor</key>
+			<string>PlistReader</string>
 		</dict>
-
-		
+	
 		<dict>
 			<key>Arguments</key>
 			<dict>
