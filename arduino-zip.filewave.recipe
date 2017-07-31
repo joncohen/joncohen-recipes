@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of Ardunio for Mac and imports into Filewave.</string>
 	<key>Identifier</key>
-	<string>com.github.joncohen.filewave.arduino</string>
+	<string>com.github.joncohen.filewave.arduino-zip</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
