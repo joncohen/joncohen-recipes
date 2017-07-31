@@ -18,6 +18,9 @@
 	<key>ParentRecipe</key>
 	<string>com.github.jps3.download.Arduino</string>
 	
+<!--
+Process based on the work from https://github.com/autopkg/peshay-recipes.git
+-->
 
 	<key>Process</key>
 	<array>
@@ -43,7 +46,6 @@
 			<key>Processor</key>
 			<string>PlistReader</string>
 		</dict>
-	
 		<dict>
 			<key>Arguments</key>
 			<dict>
