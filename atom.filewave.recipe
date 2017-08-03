@@ -50,7 +50,7 @@ Process based on the work from https://github.com/autopkg/peshay-recipes.git
 			<key>Arguments</key>
 			<dict>
 				<key>fw_app_bundle_id</key>
-				<string>%fw_app_bundle_id%</string>
+				<string>%version%</string>
 				<key>fw_app_version</key>
 				<string>%version%</string>
 				<key>fw_destination_root</key>
