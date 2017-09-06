@@ -65,7 +65,7 @@
 				<key>fw_import_source</key>
 				<string>%pkgroot%/Applications/%app_name%</string>
 				<key>fw_fileset_group</key>
-				<string>Secure Messaging - VSee Client</string>
+				<string>Spotify</string>
 			</dict>
 			<key>Processor</key>
 			<string>com.github.autopkg.filewave.FWTool/FileWaveImporter</string>
