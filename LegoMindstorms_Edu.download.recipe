@@ -19,7 +19,7 @@
             <key>Arguments</key>
             <dict>
                 <key>url</key>
-                <string>http://www.lego.com/en-us/mindstorms/downloads/download-software</string>
+                <string>https://education.lego.com/en-us/downloads/mindstorms-ev3</string>
                 <key>re_pattern</key>
                 <string>(?P&lt;url&gt;https://le-www-live-s.legocdn.com/downloads/LME-EV3/LME-EV3_Full-setup_(?P&lt;version&gt;.*?)_en-GB_OSX.dmg)</string>
             </dict>
