@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>Downloads the current release version of Lego Mindstorms for Education
+    </string>
+    <key>Identifier</key>
+    <string>com.github.joncohen.download.legomindstorms</string>
+    <key>Input</key>
+    <dict/>
+    <key>MinimumVersion</key>
+    <string>0.2.9</string>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Processor</key>
+            <string>URLTextSearcher</string>
+            <key>Arguments</key>
+            <dict>
+                <key>url</key>
+                <string>http://www.lego.com/en-us/mindstorms/downloads/download-software</string>
+                <key>re_pattern</key>
+                <string>(?P&lt;url&gt;https://le-www-live-s.legocdn.com/downloads/LME-EV3/LME-EV3_Full-setup_(?P&lt;version&gt;.*?)_en-GB_OSX.dmg)</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>URLDownloader</string>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>EndOfCheckPhase</string>
+        </dict>
+        <dict>   
+            <key>Processor</key>   
+            <string>CodeSignatureVerifier</string>   
+            <key>Arguments</key>   
+            <dict>   
+               <key>input_path</key>   
+               <string>%pathname%/LEGO*.*pkg</string>
+               <key>expected_authority_names</key>
+               <array>
+                  <string>Developer ID Installer: National Instruments (SKTKK2QZ74)</string>
+                  <string>Developer ID Certification Authority</string>
+                  <string>Apple Root CA</string>
+               </array>
+            </dict>
+         </dict>
+    </array>
+</dict>
+</plist>
