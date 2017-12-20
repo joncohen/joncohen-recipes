@@ -15,20 +15,15 @@
     <array>
         <dict>
             <key>Processor</key>
-            <string>URLTextSearcher</string>
+            <string>URLDownloader</string>
             <key>Arguments</key>
             <dict>
                 <key>url</key>
-                <string>https://education.lego.com/en-us/downloads/mindstorms-ev3</string>
-                <key>re_pattern</key>
-                <string>(%*%_en-GB_OSX.dmg)</string>
+                <string>https://le-www-live-s.legocdn.com/downloads/LME-EV3/LME-EV3_Full-setup_1.3.2_en-GB_OSX.dmg</string>
+                <key>filename</key>
+                <string>LegoMindstorm-Edu.dmg</string>
             </dict>
         </dict>
-        <dict>
-            <key>Processor</key>
-            <string>URLDownloader</string>
-        </dict>
-        <dict>
             <key>Processor</key>
             <string>EndOfCheckPhase</string>
         </dict>
