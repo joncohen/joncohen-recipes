@@ -24,6 +24,7 @@
                 <string>LegoMindstorm-Edu.dmg</string>
             </dict>
         </dict>
+        <dict>
             <key>Processor</key>
             <string>EndOfCheckPhase</string>
         </dict>
